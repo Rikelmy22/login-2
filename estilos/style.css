@@ -1,37 +1,60 @@
 @charset "UTF-8";
 
-:root {
-    --cor-01:#5C3C30;
-    --cor-02:#E19475;
-}
-
 * {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
+}
+
+:root {
+    --cor-01:#3b1551;
+    --cor-02:#41882f;
 }
 
 body {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(137, 115, 115, 0.695);
+    background-color: var(--cor-01);
 }
 
 main {
     position: relative;
+    width: 100vw;
     height: 100vh;
-    background-color: var(--cor-02);
 }
 
-section#tela {
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+main > section#login {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   overflow: hidden;
+
+   background-color: #fff;
+   transform: translate(-50%,-50%);
+   width: 280px;
+   height: 550px;
+   border-radius: 20px;
+   box-shadow: 0px 0px 10px black;
 }
 
-div#imagem {
+main > section#login > div#imagem {
+    display: block;
+    height: 200px;
     background-image: url(../imagem/pattern.jpg.jpg);
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+main > section#login > div#tela > h1 {
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+main > section#login > div#tela > p {
+    line-height: 23px;
+    padding: 0px 10px 10px 10px;
 }
