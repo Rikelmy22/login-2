@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+:root {
+    --cor-01:#5C3C30;
+    --cor-02:#E19475;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(137, 115, 115, 0.695);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    background-color: var(--cor-02);
+}
+
+section#tela {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#imagem {
+    background-image: url(../imagem/pattern.jpg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}

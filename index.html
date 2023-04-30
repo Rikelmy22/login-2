@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 2</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <main>
+        <section id="tela">
+            <div id="imagem">
+                
+            </div>
+            <div id="login">
+            <h1>
+                Login
+            </h1>
+            <p>
+                Preencha a área com seus dados e faça o cadastro para acessar a sua conta.
+            </p>
+            <form action="d5estinatario.php" method="post">
+                <p><label for="iemail">E-mail:</label><input type="email" name="email" id="iemail" placeholder="seu e-mail" required minlength="10" maxlength="30"></p>
+                <p><label for="isen">Senha:</label><input type="password" name="sen" id="isen" required placeholder="sua senha"></p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+                <p>
+                    <input type="reset" value="Apagar dados">
+                </p>
+            </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
