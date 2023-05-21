@@ -42,7 +42,7 @@ main > section#login {
 
 main > section#login > div#imagem {
     display: block;
-    height: 200px;
+    height: 250px;
     background-color: var(--cor-01);
     background-image: url(../imagem/pattern.jpg.jpg);
     background-position: center;
