@@ -10,35 +10,30 @@
     <link rel="stylesheet" href="estilos/mediaqueries.css">
 </head>
 <body>
-    <main>
-        <section id="login">
-            <div id="imagem">
-            </div>
-            <div id="tela">
+   <main>
+    <section id="login">
+        <div id="imagem"></div>
+        <div id="tela">
             <h1>
                 Login
             </h1>
             <p>
-              Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+                Seja bem-vindo(a) novamente. Preencha com seus dados e tenha acesso a os seus dados para fazer alterações e se manter atualizado.
             </p>
-           <form action="destinatario.php" method="post" autocomplete="on">
+        <form action="destinatario.php" method="post" autocomplete="on">
             <div class="campo">
-                <label for="ie-mail">
-                    <span class="material-icons">person</span>
-                 </label>
-                 <input type="email" name="email" id="ie-mail" placeholder="seu e-mail" maxlength="30" required >
+                <label for="ie-mail"><span class="material-icons">person</span></label>
+                <input type="email" name="e-mail" id="ie-mail" placeholder="seu e-mail" maxlength="30" required>
             </div>
             <div class="campo">
-                <label for="isen">
-                    <span class="material-icons">key</span>
-                 </label>
-                 <input type="password" name="password" id="isen" placeholder="sua senha" required minlength="8" maxlength="20">
+                <label for="isen"><span class="material-icons">key</span></label>
+                <input type="password" name="senha" id="isen" placeholder="sua senha" minlength="8" maxlength="20" required>
             </div>
-            <input type="submit" value="ENTRAR">
-            <a href="apagar.com.br" id="botao">Esqueci a senha<span class="material-icons">mail</span></a>
-           </form>
-            </div>
-        </section>
-    </main>
+            <input type="submit" value="ENVIAR">
+            <a href="apagar-dados.com.br" id="botao">Esqueci minha senha<span class="material-icons">mail</span></a>
+        </form>
+        </div>
+    </section>
+   </main>
 </body>
 </html>
